@@ -1,15 +1,13 @@
 {
     "@context": [
         "http://uri.etsi.org/ngsi-ld/core-context.jsonld",
-        "http://waterdna.kr/ngsi-ld/water.jsonld"
+        "http://uri.waterdna.kr/ngsi-ld/water.jsonld"
     ],
-    "id": "urn:waterdna:waterFlowMeter_102",
-    "type": "kr.waterdna.waterFlowMeter:1.0",
-    "createdAt": "2018-11-15T20:10:00,000+09:00",
-    "modifiedAt": "2018-11-15T20:10:00,000+09:00",
+    "id": "urn:waterdna:WaterFlowMeter_1",
+    "type": "kr.waterdna.WaterFlowMeter:1.1",
     "name": {
         "type": "Property",
-        "value": "세종시_유량계_102"
+        "value": "해밀지구_유량계_101동"
     },
     "location": {
         "type": "GeoProperty",
@@ -21,14 +19,19 @@
             ]
         }
     },
-    "flux": {
+    "flowRate": {
         "type": "Property",
-        "value": 3000.2,
+        "value": 3.2,
         "observedAt": "2018-11-15T20:10:00,000+09:00"
     },
-    "refWaterPumpStation": {
-        "type": "Relationship",
-        "object": "urn:waterdna:waterPumpStation_102"
+    "flow": {
+        "type": "Property",
+        "value": 3000.2,
+        "observedAt": "2018-11-15T20:10:00,000+09:00",
+        "duration": {
+            "type": "Property",
+            "value": "10분"
+        }
     },
     "refWaterPurificationPlant": {
         "type": "Relationship",

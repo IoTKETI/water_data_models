@@ -1,15 +1,17 @@
 {
     "@context": [
         "http://uri.etsi.org/ngsi-ld/core-context.jsonld",
-        "http://waterdna.kr/ngsi-ld/water.jsonld"
+        "http://uri.waterdna.kr/ngsi-ld/water.jsonld"
     ],
-    "id": "urn:waterdna:waterQualitySensor_102",
-    "type": "kr.waterdna.waterQualitySensor:1.1",
-    "createdAt": "2018-11-15T20:10:00,000+09:00",
-    "modifiedAt": "2018-11-15T20:10:00,000+09:00",
+    "id": "urn:waterdna:haemil:WaterQualitySensor_0001",
+    "type": "kr.waterdna.WaterQualitySensor:1.2",
     "name": {
         "type": "Property",
-        "value": "세종시_수질센서_102"
+        "value": "해밀지구_수질센서_1"
+    },
+    "deviceId": {
+        "type": "Property",
+        "value": "LT-LWM-G0002081"
     },
     "location": {
         "type": "GeoProperty",
@@ -34,6 +36,11 @@
     "pH": {
         "type": "Property",
         "value": 6.5,
+        "observedAt": "2018-11-15T20:10:00,000+09:00"
+    },
+    "temperature": {
+        "type": "Property",
+        "value": 16.5,
         "observedAt": "2018-11-15T20:10:00,000+09:00"
     },
     "refWaterPurificationPlant": {
